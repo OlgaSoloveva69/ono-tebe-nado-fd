@@ -1,1 +1,252 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 50px 50px;
+  width: 1100px;
+  height: 293px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__links-list {
+  display: flex;
+  column-gap: 20px;
+  list-style: circle;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__address-list-item_no-bullit,
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.address_header {
+  max-width: 240px;
+  justify-self: end;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.cover {
+  position: relative;
+  background-image: url(/images/cover.jpg);
+  background-size: cover;
+  width: 1100px;
+  height: 757px;
+}
+
+.cover__title {
+  width: 1100px;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.cover__title, 
+.cover__description, 
+.bet-button { 
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.aligned-text {
+  display: block;
+  padding-left: 50px;
+  padding-top: 156px;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.cover__description {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  word-spacing: 18px;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 106px 50px 50px 50px;
+}
+
+.cover__description-text {
+  align-content: center;
+}
+
+
+.bet-button {
+  background-color: transparent;
+  font-size: 22px;
+  height: 51px;
+  text-transform: uppercase;
+  border-color: white;
+  border: 1px solid white;
+}
+
+.lots {
+  min-width: 1052px;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
+
+.lots__heading {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+
+.card__title,
+.card__text {
+  height: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.card__text {
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+}
+
+.card__title {
+  display: grid;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  padding: 48px 40px 40px; 
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg); 
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);  
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: 334px;
+  height: 596px;
+  flex-direction: column;
+  column-gap: 25px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lots__look-more-link {
+  padding: 30px 820px 2px 40px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  background: black;
+  clip-path: ellipse(120px 120px);
+  margin-top: 35px;
+  margin-left: 47px;
+}
+
+.about__logo-image {
+  display: flex;
+  background-image: url(/images/logo-white.svg);
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+  margin-top: 136px;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.about__text-1 {
+  padding-bottom: 24px;
+}
+
+.footer {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+
+.address_footer {
+  margin-left: 50px;
+  
+
+}
+
+.footer__menu-list {
+  align-items: center;
+}
+.footer__social-list {
+  background-image: url(/images/yt.svg);
+  background-image: url(/images/vk.svg);
+  background-image: url(/images/pinterest.svg);
+  color: black;
+
+}
+
+
+
